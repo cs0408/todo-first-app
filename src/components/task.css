@@ -1,0 +1,66 @@
+.task__container {
+  /* padding: 1rem; */
+  margin: 0.5rem;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+
+.task__container-btn {
+  /* background-color: turquoise; */
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#delete {
+  color: red;
+  margin: 1rem;
+  text-shadow: 5px 10px 6px black;
+  font-size: 24px;
+  transform: rotate(45deg);
+  font-weight: 900;
+  opacity: 0.5;
+}
+
+#delete:hover {
+  text-shadow: 5px 10px 6px red;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#complete {
+  color: green;
+  font-size: 18px;
+  margin: 1rem;
+  font-weight: bold;
+  text-shadow: 5px 10px 6px black;
+  opacity: 0.5;
+  font-weight: 900;
+}
+#complete:hover {
+  text-shadow: 5px 10px 6px green;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.task__container-text {
+  margin: 0 0 0 1rem;
+  opacity: 0.9;
+  display: flex;
+  flex: 1.5;
+  font-size: 16px;
+  font-weight: 800;
+  align-items: center;
+  justify-content: left;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 340px) {
+  .task__container-btn {
+    justify-content: space-between;
+  }
+}
